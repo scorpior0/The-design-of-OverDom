@@ -1,7 +1,7 @@
-OverDom Empire
+OverDom —— 🦂bot
 =
 
-适用于游戏《[screeps](https://screeps.com/)》的半自动 ai。
+适用于游戏《[screeps](https://screeps.com/)》的全自动 ai。
 
 注意：  
 Notes:  
@@ -14,10 +14,9 @@ The purpose of this project is sharing my design pattern (in Chinese) and partia
 
 简介 Introduction
 -
-本项目是高度面向对象编程（OOP）并且任务驱动（Task-Driven）的，除了挂载在 global 对象上的全局通用函数和常量外，一切功能都由对象完成。对基本游戏对象（creep、link、lab、factory等）全都分别封装在管理对象中，任务或事件逻辑调用。  
-**OverDom** 帝国采取层次化管理，最高领导者即 **OverDom** ， 下有各级 Officer， 下级对象保存在上级对象的成员变量中。游戏逻辑分为三层：战略逻辑、战术逻辑、基本动作，每层由不同管理者执行，上层功能拆分成下层子任务来完成。   
+本项目采用【收集需求→统一解算】思路构建，creep 出生、物流调度、工作分配都分别收集所有需求后采用综合性能最佳的算法求解，避免固定角色和盲目分配。所有行动统一视为 Task（任务），采用【任务链+定时事件】作为全局统一的执行机制。
 
-**OverDom** is a fully Object-Oriented programed and Task-Driven AI of [screeps](https://screeps.com/).   
+**OverDom** is a fully automated Task-Driven AI of [screeps](https://screeps.com/).   
 
 
 教程 Guide

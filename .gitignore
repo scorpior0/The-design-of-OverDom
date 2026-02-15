@@ -1,2 +1,5 @@
 .idea/*
 .doc/papers
+.vscode/*
+.cursor
+.trae
